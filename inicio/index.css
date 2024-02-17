@@ -1,0 +1,131 @@
+
+/* Aplicando estilos ala cabecera de la pagina */
+
+header{
+    background-image: url(img/gato-fondo1.png);
+}
+.menu_nav :nth-child(1){
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+/* Estilos de los titulos sobre la imagen del encabezado. */
+
+.tittle{
+    z-index: 10;
+    font-family: 'Montserrat', sans-serif;
+    grid-row: 2/6;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.tittle h1{
+    grid-column: 7/12;
+    grid-row: 1/4;
+    font-weight: bold;
+    font-size: 2.4rem;
+    color: #ff0044;
+    text-shadow: 2px 2px 0px #fff;
+}
+
+.tittle p{
+    grid-column: 8/12;
+    grid-row: 5/6;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.recomendaciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 70px;
+    font-size: 1rem;
+    height: 300px;
+}
+
+.recomendaciones div{
+    padding: 10px;
+}
+
+.recomendaciones img{
+    display: block;
+    margin: auto;
+    height: 140px;
+    width: auto;
+    padding: 2rem 0;
+}
+
+.container_main h2{
+    padding: 4rem 0 2rem 0;
+}
+
+.recomendaciones p{
+    text-align: center;
+}
+
+.container_main section{
+    padding: 2rem 0;
+}
+/* Media queries */
+
+/* mobile */
+@media screen and (max-width: 767px) {
+
+    .tittle h1{
+        font-size: 2.5rem;
+        grid-column: 2/12;
+        text-shadow: 2px 2px 0px #fff;
+    }
+
+    .tittle p{
+        grid-row: 6/span2;
+        grid-column: 2/12;
+        font-size: 1rem;
+        word-spacing: 3px;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .recomendaciones{
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .recomendaciones img{
+        height: 200px;
+    }
+
+    .container_main p{
+        text-align: justify;
+    }
+
+    .recomendaciones p{
+        text-align: center;
+    }
+
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+        .tittle h1{
+            grid-column: 2/12;
+            text-shadow: 2px 2px 0px #fff;
+        }
+
+        .tittle p{
+            grid-column: 5/12;
+            grid-row: 6;
+            font-size: 1.2rem;
+            line-height: 1.3;
+        }
+    .recomendaciones{
+        flex-direction: column;
+        height: max-content;
+    }
+    .recomendaciones img{
+        height: 200px;
+    }
+    }

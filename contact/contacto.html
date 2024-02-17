@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactme!</title>
+    <link rel="stylesheet" href="/Estilos Genericos/genericsStyles.css">
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" href="/IMG GENERALES/logo-de-web.png">
+</head>
+<body>
+    <header>
+        <nav class="header__nav">
+            <div class="img-logo">
+                <a href="/inicio/index.html">
+                    <img src="/IMG GENERALES/gato-logo.png" alt="Logo de la pagina, osea un gato">
+                    <h2>Proyect Cat</h2>
+                </a>
+            </div>
+            <div class="menu_nav">
+                <a href="/inicio/index.html">Inicio</a>
+                <a href="/Razas/razas.html">Razas</a>
+                <a href="/Cuidado/cuidado.html">Cuidado</a>
+                <a href="/Comportamiento/comportamiento.html">Comportamiento</a>
+                <a href="/contact/contacto.html">Contacto</a>
+                <a href="/Acerca de/acerca-de.html">Acerca de</a>
+            </div>
+            <button type="button" class="boton-responsive">
+                <span class="br-1"></span>
+                <span class="br-2"></span>  
+                <span class="br-3"></span>
+            </button>
+        </nav>
+        <div class="tittle">
+            <h1>Bienvenido a la pagina de Contacto!</h1>
+            <p>Dejanos tu comentario, para que pueda comunicarme contigo!</p>
+        </div>
+    </header>
+
+    <main class="container_main">
+        <section>
+            <h2>Dejame un Mensaje para poder contactarme contigo!</h2>
+        </section>
+        <div class="container-form">
+            <section class="formulario">
+                <form id="form-respuesta">
+                    <label class="labelNombre" for="txtNombre">Nombre</label>
+                    <input required id="txtNombre" type="text" placeholder="Ingrese su Nombre"> 
+
+                    <label class="labelCorreo" for="txtCorreo">Correo Electronico</label>
+                    <input required id="txtCorreo" type="email" placeholder="ejemplo@gmail.com">
+
+                    <label class="labelMensaje" for="txtMensaje">Estoy emocionado de que estés interesado en contactarme!</label>
+                    <textarea required id="txtMensaje" placeholder="Dejame un Mensaje!"></textarea>
+                </form>
+            </section>
+                <section class="container-button">
+                    <button form="form-respuesta" type="submit">Enviar Respuesta</button>
+                </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="content">
+            <a href="#">Black EJ</a>
+            <a href="#">Derechos no reservados</a>
+            <a href="#">Comportamiento de Gatos</a>
+            <a href="#">Datos Interesantes</a>
+    </div>
+        <div class="redes-sociales">
+            <a href="#"><img src="/IMG GENERALES/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="/IMG GENERALES/instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="/IMG GENERALES/whatsapp-icon.png" alt="Whatsapp"></a>
+            <a href="#"><img src="/IMG GENERALES/linkedin-icon.png" alt="Linkedin"></a>
+            <a href="#"><img src="/IMG GENERALES/twiter-icon.png" alt="twiter"></a>
+        </div>
+    </footer>
+    
+    <script src="/JS/menu.js"></script>
+</body>
+</html>
