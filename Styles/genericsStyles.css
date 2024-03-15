@@ -68,6 +68,7 @@ header::before{
     height: 3.125rem;
     width: auto;
     filter: invert(1);
+    aspect-ratio: 4/4;
 }
 .menu_nav{
     width: 60%;

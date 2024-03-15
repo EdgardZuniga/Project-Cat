@@ -30,3 +30,13 @@ addLink(Care, "Care");
 addLink(Behaviour, "Behaviour");
 addLink(Contact, "Contact");
 addLink(Interesting, "InterestingFacts");
+
+//AGREGAR EL LOGO OFICIAL DE LA PAGINA
+let logoDirectory = "/Resources/General-images/gato-logo.png"
+
+const Logo = document.querySelector('#Logo-Principal');
+Logo.alt = "Logo Oficial de la PAGINA";
+Logo.setAttribute('src', logoDirectory);
+
+
+
