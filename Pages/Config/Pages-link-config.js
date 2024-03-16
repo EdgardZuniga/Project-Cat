@@ -1,10 +1,10 @@
 const Pages = {
-    Index: "Index.html",
-    Behaviour: "Pages/Behaviour/Behaviour.html",
-    Breeds: "Pages/Breeds/Breeds.html",
-    Care: "Pages/Care/Care.html",
-    Contact: "Pages/Contact/Contact.html",
-    InterestingFacts: "Pages/Interesting-Facts/interesting-facts.html"
+    Index: "../../Index.html",
+    Behaviour: "../../Pages/Behaviour/Behaviour.html",
+    Breeds: "../../Pages/Breeds/Breeds.html",
+    Care: "../../Pages/Care/Care.html",
+    Contact: "../../Pages/Contact/Contact.html",
+    InterestingFacts: "../../Pages/Interesting-Facts/interesting-facts.html"
 }
 
 const Index = document.querySelector('#Index'),
@@ -30,13 +30,3 @@ addLink(Care, "Care");
 addLink(Behaviour, "Behaviour");
 addLink(Contact, "Contact");
 addLink(Interesting, "InterestingFacts");
-
-//AGREGAR EL LOGO OFICIAL DE LA PAGINA
-let logoDirectory = "Resources/General-images/gato-logo.png"
-
-const Logo = document.querySelector('#Logo-Principal');
-Logo.alt = "Logo Oficial de la PAGINA";
-Logo.setAttribute('src', logoDirectory);
-
-
-

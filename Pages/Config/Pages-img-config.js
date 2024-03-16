@@ -1,9 +1,9 @@
 const images = {
-    Facebook : './Resources/General-images/facebook-icon.png',
-    Twitter : './Resources/General-images/twiter-icon.png',
-    Instagram : './Resources/General-images/instagram-icon.png',
-    Linkedin : './Resources/General-images/linkedin-icon.png',
-    WhatsApp : './Resources/General-images/whatsapp-icon.png'
+    Facebook : '../../Resources/General-images/facebook-icon.png',
+    Twitter : '../../Resources/General-images/twiter-icon.png',
+    Instagram : '../../Resources/General-images/instagram-icon.png',
+    Linkedin : '../../Resources/General-images/linkedin-icon.png',
+    WhatsApp : '../../Resources/General-images/whatsapp-icon.png'
 }
 
 const Facebook = document.querySelector('#Facebook'),
@@ -11,7 +11,6 @@ Twitter = document.querySelector('#Twitter'),
 Instagram = document.querySelector('#Instagram'),
 Linkedin = document.querySelector('#Linkedin'),
 WhatsApp = document.querySelector('#WhatsApp');
-
 
       function addLink(element, name){
         if (images[name]) {
@@ -28,3 +27,10 @@ addLink(Twitter, "Twitter");
 addLink(Instagram, "Instagram");
 addLink(Linkedin, "Linkedin");
 addLink(WhatsApp, "WhatsApp");
+
+//AGREGAR EL LOGO OFICIAL DE LA PAGINA
+let logoDirectory = "../../Resources/General-images/gato-logo.png"
+
+const Logo = document.querySelector('#Logo-Principal');
+Logo.alt = "Logo Oficial de la PAGINA";
+Logo.setAttribute('src', logoDirectory);
