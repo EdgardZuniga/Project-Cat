@@ -33,11 +33,11 @@ addImg(WhatsApp, "WhatsApp");
 
 const Pages = {
     Index: "Index.html",
+    Contact: "Pages/Contacts/Contact.html",
     Behaviour: "Pages/Behaviour/Behaviour.html",
+    InterestingFacts: "Pages/Interesting-Facts/Interesting-Facts.html",
     Breeds: "Pages/Breeds/Breeds.html",
     Care: "Pages/Care/Care.html",
-    Contact: "Pages/Contacts/Contact.html",
-    InterestingFacts: "Pages/Interesting-Facts/Interesting-Facts.html"
 }
 
 const Index = document.querySelector('#Index'),
