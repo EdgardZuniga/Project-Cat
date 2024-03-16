@@ -1,9 +1,9 @@
 const images = {
-    Facebook : '/Resources/General-images/facebook-icon.png',
-    Twitter : '/Resources/General-images/twiter-icon.png',
-    Instagram : '/Resources/General-images/instagram-icon.png',
-    Linkedin : '/Resources/General-images/linkedin-icon.png',
-    WhatsApp : '/Resources/General-images/whatsapp-icon.png'
+    Facebook : './Resources/General-images/facebook-icon.png',
+    Twitter : './Resources/General-images/twiter-icon.png',
+    Instagram : './Resources/General-images/instagram-icon.png',
+    Linkedin : './Resources/General-images/linkedin-icon.png',
+    WhatsApp : './Resources/General-images/whatsapp-icon.png'
 }
 
 const Facebook = document.querySelector('#Facebook'),
