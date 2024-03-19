@@ -3,7 +3,7 @@ const Pages = {
     Behaviour: "../../Pages/Behaviour/Behaviour.html",
     Breeds: "../../Pages/Breeds/Breeds.html",
     Care: "../../Pages/Care/Care.html",
-    Contact: "../../Pages/Contacts/Contact-me.html",
+    Contact: "../../Pages/Contact-Me/Contact-me.html",
     InterestingFacts: "../../Pages/Interesting-Facts/interesting-facts.html"
 }
 
