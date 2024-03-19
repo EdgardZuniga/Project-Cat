@@ -33,7 +33,7 @@ addImg(WhatsApp, "WhatsApp");
 
 const Pages = {
     Index: "Index.html",
-    Contact: "Pages/Contacts/Contact.html",
+    Contact: "Pages/Contacts/Contact-me.html",
     Behaviour: "Pages/Behaviour/Behaviour.html",
     InterestingFacts: "Pages/Interesting-Facts/Interesting-Facts.html",
     Breeds: "Pages/Breeds/Breeds.html",
