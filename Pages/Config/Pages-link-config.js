@@ -1,10 +1,10 @@
 const Pages = {
-    Index: "index.html",
+    Index: "../../",
+    InterestingFacts: "../../Pages/Interesting-Facts/Interesting-Facts.html",
     Behaviour: "../../Pages/Behaviour/Behaviour.html",
     Breeds: "../../Pages/Breeds/Breeds.html",
     Care: "../../Pages/Care/Care.html",
-    Contact: "../../Pages/Contact-Me/Contact-me.html",
-    InterestingFacts: "../../Pages/Interesting-Facts/Interesting-facts.html"
+    Contact: "../../Pages/Contact-Me/Contact-me.html"
 }
 
 const Index = document.querySelector('#Index'),
