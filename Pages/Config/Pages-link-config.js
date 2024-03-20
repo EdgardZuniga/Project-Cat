@@ -1,5 +1,5 @@
 const Pages = {
-    Index: "../../Index.html",
+    Index: "",
     Behaviour: "../../Pages/Behaviour/Behaviour.html",
     Breeds: "../../Pages/Breeds/Breeds.html",
     Care: "../../Pages/Care/Care.html",
