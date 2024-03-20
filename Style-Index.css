@@ -4,10 +4,6 @@
 header{
     background-image: url(Images/gato-fondo1.png);
 }
-.menu_nav :nth-child(1){
-    border-bottom: 1px solid white;
-    color: white;
-}
 
 /* Estilos de los titulos sobre la imagen del encabezado. */
 

@@ -5,11 +5,6 @@ header{
     background-image: url(img/gato-fondo.jpg);
 }
 
-.menu_nav :nth-child(2){
-    border-bottom: 1px solid white;
-    color: white;
-}
-
 .tittle{
     z-index: 10;
     grid-row: 2/6;

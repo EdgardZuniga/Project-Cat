@@ -2,14 +2,7 @@
 
 header{
     background-image: url(Img/fondo.jpg);
-}
-
-
-.menu_nav :nth-child(6){
-    border-bottom: 1px solid white;
-    color: white;
-}
-
+}   
 
 .tittle{
     z-index: 10;

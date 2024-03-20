@@ -7,20 +7,23 @@ const Pages = {
     Contact: "../../Pages/Contact-Me/Contact-me.html"
 }
 
-const Index = document.querySelector('#Index'),
-      Breeds = document.querySelector('#Breeds'),
-      Care = document.querySelector('#Care'),
-      Behaviour = document.querySelector('#Behaviour'),
-      Contact = document.querySelector('#Contact'),
-      Interesting = document.querySelector('#Interesting');
+const Index = document.querySelectorAll('.Index'),
+      Breeds = document.querySelectorAll('.Breeds'),
+      Care = document.querySelectorAll('.Care'),
+      Behaviour = document.querySelectorAll('.Behaviour'),
+      Contact = document.querySelectorAll('.Contact'),
+      Interesting = document.querySelectorAll('.Interesting');
 
 
-      function addLink(element, name){
-        if (Pages[name]) {
-            element.href = Pages[name];
-        } else {
-            console.error(`La página '${name}' no está definida en el objeto Pages.`);
-        }
+
+      function addLink(elements, name) {
+        elements.forEach(element => {
+            if (Pages[name]) {
+                element.href = Pages[name];
+            } else {
+                console.error(`La página '${name}' no está definida en el objeto Pages.`);
+            }
+        });
     }
     
 

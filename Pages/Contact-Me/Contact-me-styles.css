@@ -5,11 +5,6 @@ header{
     background-image: url(../Breeds/img/Gato\ Bosque\ de\ Noruega.png);
 }
 
-.menu_nav :nth-child(5){
-    text-decoration: underline;
-    color: white;
-}
-
 .tittle{
     z-index: 10;
     grid-row: 2/6;

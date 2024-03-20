@@ -3,10 +3,7 @@
 header{
     background-image: url(Img/cerrar-medico-guantes.jpg);
 }
-.menu_nav :nth-child(3){
-    border-bottom: 1px solid white;
-    color: white;
-}
+
 .tittle{
     z-index: 10;
     grid-row: 2/6;

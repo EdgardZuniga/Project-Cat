@@ -261,3 +261,8 @@ header .activador{
     transform: translateX(0%);
     transition: .3s ease;
 }
+
+.menu_nav .active-Page{
+    text-decoration: underline;
+    color: white;
+}
