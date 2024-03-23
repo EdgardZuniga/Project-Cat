@@ -8,6 +8,7 @@ header{
 .tittle{
     z-index: 10;
     grid-row: 2/6;
+    position: relative;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -23,8 +24,8 @@ header{
 }
 
 .tittle img{
-    top: 15rem;
-    left: 5rem;
+    grid-column: 1/4;
+    grid-row: 4;
     height: 300px;
     width: auto;
     position: absolute;
@@ -70,17 +71,14 @@ section img{
 /* mobile */
 @media screen and (max-width: 767px) {
 
-    header{
-        background-position: -15.625rem;
-    }
     .tittle h1{
         font-size: 3.7rem;
         grid-column: 2/8;
     }
 
     .tittle img{
-        top: 22rem;
-        left: 13rem;
+        grid-column: 8/12;
+        grid-row: 2;
         height: 150px;
     }
 
@@ -110,7 +108,7 @@ section img{
         .tittle img{
             height: 200px;
             grid-column: 1/4;
-            grid-row: 6;
+            grid-row: 5;
         }
 
         .tittle p{
