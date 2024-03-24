@@ -1,9 +1,9 @@
 const images = {
-    Facebook : '../../Resources/General-images/facebook-icon.png',
-    Twitter : '../../Resources/General-images/twiter-icon.png',
-    Instagram : '../../Resources/General-images/instagram-icon.png',
-    Linkedin : '../../Resources/General-images/linkedin-icon.png',
-    WhatsApp : '../../Resources/General-images/whatsapp-icon.png'
+    Facebook : '../../Resources/General-images/Facebook.webp',
+    Twitter : '../../Resources/General-images/Twiter.webp',
+    Instagram : '../../Resources/General-images/Instagram.webp',
+    Linkedin : '../../Resources/General-images/Linkedin.webp',
+    WhatsApp : '../../Resources/General-images/WhatsApp.webp'
 }
 
 const Facebook = document.querySelector('#Facebook'),
@@ -29,7 +29,7 @@ addLink(Linkedin, "Linkedin");
 addLink(WhatsApp, "WhatsApp");
 
 //AGREGAR EL LOGO OFICIAL DE LA PAGINA
-let logoDirectory = "../../Resources/General-images/gato-logo.png"
+let logoDirectory = "../../Resources/General-images/Gato-logo.webp"
 
 const Logo = document.querySelector('#Logo-Principal');
 Logo.alt = "Logo Oficial de la PAGINA";

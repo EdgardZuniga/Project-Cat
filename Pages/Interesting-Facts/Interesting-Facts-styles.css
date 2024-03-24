@@ -1,7 +1,7 @@
 /* Aplicando estilos ala cabecera de la pagina */
 
 header{
-    background-image: url(Img/fondo.jpg);
+    background-image: url(Img/Gato-negro.webp);
 }   
 
 .tittle{
@@ -51,9 +51,14 @@ section li{
 /* mobile */
 @media screen and (max-width: 767px) {
 
+    header{
+        background-position: right;
+    }
+
     .tittle h1{
         font-size: 2.3rem;
-        grid-column: 2/11;
+        grid-row: 3;
+        grid-column: 2/12;
     }
 
     .tittle img{
