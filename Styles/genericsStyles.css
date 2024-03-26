@@ -21,6 +21,35 @@ html{
     scroll-padding-top: 100px;
 }
 /* Aplicando estilos ala cabecera de la pagina */
+
+@keyframes  move-Title{
+    from{
+        transform: translateX(-200px);
+        opacity: 0%;
+    }to{
+        transform: translateX(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes  move-Paragraph {
+    from{
+        transform: translateY(200px);
+        opacity: 0%;
+    }to{
+        transform: translateX(0);
+        opacity: 100%;
+    }
+}
+
+.animation-Tittle{
+    animation: move-Title 1s ease-in-out;
+}
+
+.animation-Paragraph{
+    animation: move-Paragraph 1s ease-in-out;
+}
+
 header{
     z-index: 10;
     width: 100%;
@@ -96,6 +125,25 @@ header::before{
 }
 
 /* estilos de el MAIN */
+@keyframes Show {
+    from{
+        opacity: 0;
+        scale: 25%;
+    }
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+.animation-Scrolling{
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: Show;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
 
 .container_main{
     display: grid;

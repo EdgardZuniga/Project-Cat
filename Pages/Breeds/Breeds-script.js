@@ -21,6 +21,7 @@ function createNode(object){
     if (nameElement && imgElement && descriptionElement) {
         nameElement.textContent = object['name'];
         imgElement.setAttribute('src', object['image']);
+        imgElement.classList.add('animation-Scrolling');
         descriptionElement.textContent = object.description;
 
         articleNode.appendChild(nameElement);
