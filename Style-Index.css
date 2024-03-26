@@ -7,6 +7,7 @@ header{
 
 /* Estilos de los titulos sobre la imagen del encabezado. */
 
+
 .tittle{
     z-index: 10;
     font-family: 'Montserrat', sans-serif;
@@ -31,41 +32,81 @@ header{
     font-style: italic;
     font-size: 1.3rem;
     color: white;
-}
-
-.recomendaciones{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    padding-top: 70px;
+}
+
+.container_main > .Recomendaciones{
+    height: max-content;
+    max-height: 900x;
+    background: var(--color-principal);
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
     font-size: 1rem;
-    height: 300px;
+    padding: 40px 0;
+    box-shadow: inset 0px 0px 15px #000;
 }
 
-.recomendaciones div{
-    padding: 10px;
+.Recomendaciones__Datos{
+    grid-column: 2/9;
+}
+.Recomendaciones__Cuidado{
+    grid-column: 10/17;
+}
+.Recomendaciones__Comportamiento{
+    grid-column: 18/25;
 }
 
-.recomendaciones img{
-    display: block;
-    margin: auto;
-    height: 140px;
-    width: auto;
-    padding: 2rem 0;
+.Target{
+    height: 500px;
+    max-height: max-content;
+    border: 1px solid #000;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 4px 4px 15px #000;
+    background: #fff;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+}
+.Target__image img{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 100%;
+}
+
+.Recomendaciones p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.Recomendaciones .Target__image{
+    border-radius: 10px 10px 0 0;
+    grid-row: 1/4;
+    background: #ccc;
+    width: 100%;
+}
+
+.Recomendaciones .Target__message{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+    text-align: center;
+    padding: 0 5px 0 5px ;
+    grid-row: 4/7;
 }
 
 .container_main h2{
     padding: 4rem 0 2rem 0;
 }
 
-.recomendaciones p{
-    text-align: center;
-}
-
 .container_main section{
     padding: 2rem 0;
 }
+
+
 /* Media queries */
 
 /* mobile */
@@ -86,9 +127,25 @@ header{
         text-align: center;
     }
 
-    .recomendaciones{
-        flex-direction: column;
-        height: max-content;
+    .container_main > .Recomendaciones{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 1.5rem;
+        max-height: none;
+    }
+
+    .Recomendaciones__Datos{
+        grid-row: 1;
+        grid-column: 2/12;
+    }
+    .Recomendaciones__Cuidado{
+        grid-row: 2;
+        grid-column: 2/12;
+    }
+    .Recomendaciones__Comportamiento{
+        grid-row: 3;
+        grid-column: 2/12;
     }
 
     .recomendaciones img{
@@ -99,8 +156,9 @@ header{
         text-align: justify;
     }
 
-    .recomendaciones p{
+        .Target__message > p{
         text-align: center;
+        font-size: 1.1rem;
     }
 
   }
@@ -117,11 +175,19 @@ header{
             font-size: 1.2rem;
             line-height: 1.3;
         }
-    .recomendaciones{
-        flex-direction: column;
-        height: max-content;
-    }
-    .recomendaciones img{
-        height: 200px;
-    }
+
+        .container_main > .Recomendaciones{
+            grid-template-rows: repeat(2,1fr);
+            gap: 1.5rem;
+        }
+
+        .Recomendaciones__Datos{
+            grid-column: 2/13;
+        }
+        .Recomendaciones__Cuidado{
+            grid-column: 14/25;
+        }
+        .Recomendaciones__Comportamiento{
+            grid-column: 8/19;
+        }
     }
