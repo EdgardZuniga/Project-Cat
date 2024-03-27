@@ -33,6 +33,7 @@ header{
 /* Main */
 .container_main{
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .container_main section{
@@ -44,6 +45,95 @@ section li{
     line-height: 2;
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 20px;
+}
+
+.section-Welcome{
+    margin: 50px 0 150px 0;
+}
+
+.section-Welcome p{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.card{
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.card .front{
+    width: 100%;
+    height: 100%;
+    background: url(Img/Card.webp);
+    background-position: center;
+    background-size: 100% 100%;
+    border: 1px solid #000;
+    position: absolute;
+    border-radius: 20px;
+    backface-visibility: hidden;
+    transition: .5s linear;
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 5px 5px 10px #555;
+}
+
+.card .back{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    background: #fff;
+    border: 1px solid #000;
+    box-shadow: 5px 5px 10px #555;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 10px;
+    position: absolute;
+    border-radius: 20px;
+    backface-visibility: hidden;
+    transition: .5s linear;
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.back__Title{
+    grid-row: 1/2;
+}
+
+.back__Title h2{
+    border-bottom: 1px solid #000;
+    padding: 10px 0;
+}
+
+.back__Fact{
+    grid-row: 2/7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back__Fact p{
+    text-align: center;
+    color: #000;
+    padding-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.card.flipped .front {
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.card.flipped .back {
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.container_main > .container-Cards{
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    row-gap: 3rem;
 }
 
 /* mobile */
@@ -66,16 +156,31 @@ section li{
     }
 
     .tittle p{
-    grid-row: 6/span2;
-    grid-column: 2/12;
-    font-size: 1rem;
-    word-spacing: 3px;
-    line-height: 1.5;
-    text-align: center;
+        grid-row: 6/span2;
+        grid-column: 2/12;
+        font-size: 1rem;
+        word-spacing: 3px;
+        line-height: 1.5;
+        text-align: center;
+    }
+    .container_main > .container-Cards{
+        grid-column: 1/13;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 5rem;
+    }
+
+    .container-Cards > .card{
+        width: 80%;
+        height: 400px;
     }
   }
 
   /* Tablet */
   @media screen and (min-width: 768px) and (max-width: 991px) {
 
+    .container_main > .container-Cards{
+        grid-column: 1/13;
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 3rem;
+    }
     }
