@@ -1,32 +1,52 @@
-const images = {
-    Facebook : '../../Resources/General-images/Facebook.webp',
-    Twitter : '../../Resources/General-images/Twiter.webp',
-    Instagram : '../../Resources/General-images/Instagram.webp',
-    Linkedin : '../../Resources/General-images/Linkedin.webp',
-    WhatsApp : '../../Resources/General-images/WhatsApp.webp'
+const socialContainer = document.querySelector('.redes-sociales');
+const socialFragment = document.createDocumentFragment();
+
+const socialElements = [
+    {
+        name: "Linkedin",
+        link: "https://linkedin.com/in/edgard-zuniga",
+        img: "../../Resources/Social-images/linkedin-icon.png"
+    },
+    {
+        name: "WhatsApp",
+        link: "https://wa.me/50493501358",
+        img: "../../Resources/Social-images/WhatsApp-icon.png"
+    },
+    {
+        name: "Email",
+        link: "mailto:edgard.zunigam@gmail.com",
+        img: "../../Resources/Social-images/Email-icon.png"
+    },
+    {
+        name: "GitHub",
+        link: "https://github.com/EdgardZuniga",
+        img: "../../Resources/Social-images/Github-icon.png"
+    },
+]
+function createSocialNetwork(socialObj){
+    const socialLink = document.createElement('a');
+    if(socialObj.name !== "Email"){
+        socialLink.setAttribute('target', '_blank')
+    }
+    socialLink.setAttribute('href', socialObj.link)
+
+    const socialImage = document.createElement('img');
+    socialImage.setAttribute('src', socialObj.img);
+    socialImage.setAttribute('alt', socialObj.name + "-icon");
+
+    socialLink.appendChild(socialImage);
+    return socialLink;
 }
 
-const Facebook = document.querySelector('#Facebook'),
-Twitter = document.querySelector('#Twitter'),
-Instagram = document.querySelector('#Instagram'),
-Linkedin = document.querySelector('#Linkedin'),
-WhatsApp = document.querySelector('#WhatsApp');
+function addSocialDOM(){
+    socialElements.forEach(element =>{
+        const socialElement = createSocialNetwork(element);
+        socialFragment.appendChild(socialElement)
+    })
+}
 
-      function addLink(element, name){
-        if (images[name]) {
-            element.setAttribute('src', images[name]);
-            element.setAttribute('alt', name + "-icon");
-        } else {
-            console.error(`Error: ${name} no se encuentra en el objeto de imagenes.`);
-        }
-    }
-    
-
-addLink(Facebook, "Facebook");
-addLink(Twitter, "Twitter");
-addLink(Instagram, "Instagram");
-addLink(Linkedin, "Linkedin");
-addLink(WhatsApp, "WhatsApp");
+addSocialDOM();
+socialContainer.appendChild(socialFragment);
 
 //AGREGAR EL LOGO OFICIAL DE LA PAGINA
 let logoDirectory = "../../Resources/General-images/Gato-logo.webp"
