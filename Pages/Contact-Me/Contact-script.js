@@ -1,5 +1,7 @@
 const buttonSubmit = document.querySelector('#btn-Submit');
 
-buttonSubmit.addEventListener('click', () => {
-    alert('El formulario estará listo Proximamente...');
-})
+
+buttonSubmit.addEventListener('click',(e)=>{
+    e.preventDefault();
+    alert("Formulario por lo pronto sin funcionalidad, se esta trabajando en ello.");
+});
